@@ -20,4 +20,8 @@ const interviewRouter = require("./routes/interview.routes");
 app.use("/api/auth", authRouter);
 app.use("/api/interview", interviewRouter);
 
+app.get("/test", (req, res) => {
+    res.send("Backend Working Properly");
+});
+
 module.exports = app;
